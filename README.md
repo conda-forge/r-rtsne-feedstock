@@ -14,14 +14,16 @@ Summary: An R wrapper around the fast T-distributed Stochastic Neighbor Embeddin
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-rtsne-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-rtsne-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-rtsne-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-rtsne-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-rtsne-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-rtsne-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-rtsne-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-rtsne-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-rtsne-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-rtsne-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-rtsne-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-rtsne-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-rtsne/badges/version.svg)](https://anaconda.org/conda-forge/r-rtsne)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-rtsne/badges/downloads.svg)](https://anaconda.org/conda-forge/r-rtsne)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--rtsne-green.svg)](https://anaconda.org/conda-forge/r-rtsne) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-rtsne.svg)](https://anaconda.org/conda-forge/r-rtsne) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-rtsne.svg)](https://anaconda.org/conda-forge/r-rtsne) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-rtsne.svg)](https://anaconda.org/conda-forge/r-rtsne) |
 
 Installing r-rtsne
 ==================
