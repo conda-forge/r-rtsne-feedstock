@@ -30,6 +30,7 @@ requirements:
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('cxx') }}        # [unix]
     - {{ compiler('m2w64_cxx') }}  # [win]
+    - llvm-openmp  # [osx]
   host:
     - r-base
     - r-rcpp
@@ -37,6 +38,7 @@ requirements:
   run:
     - r-base
     - r-rcpp
+    - llvm-openmp  # [osx]
 
 test:
   commands:
