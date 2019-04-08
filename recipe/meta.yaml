@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/Rtsne_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/Rtsne/Rtsne_{{ version }}.tar.gz
-  sha256: 1c3bffe3bd11733ee4fe01749c293669daafda1af2ec74f9158f6080625b999d
+  sha256: 56376e4f0a382fad3d3d40e2cb0562224be5265b827622bcd235e8fc63df276c
 
 build:
   merge_build_host: True  # [win]
