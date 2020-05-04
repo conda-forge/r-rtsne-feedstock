@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,18 +25,18 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rcpp >=0.11.0
     - libblas
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.11.0
     - libblas
 
@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/jkrijthe/Rtsne
-  license: file LICENSE (FOSS)
+  license: LicenseRef-FOSS AND LicenseRef-BSDLike
   summary: An R wrapper around the fast T-distributed Stochastic Neighbor Embedding implementation
     by Van der Maaten  (see <https://github.com/lvdmaaten/bhtsne/> for more information
     on the original implementation).
