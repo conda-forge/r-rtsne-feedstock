@@ -1,6 +1,5 @@
 {% set version = "0.17" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rtsne
@@ -13,8 +12,7 @@ source:
   sha256: 3aae6814d6c6d406785145f07374135652f2b26a58690dfd4bfbc8365dc5590b
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,7 +22,9 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-rcpp                     # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -38,7 +38,6 @@ requirements:
     - libblas
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.11.0
     - libblas
 
